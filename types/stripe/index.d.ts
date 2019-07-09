@@ -6373,6 +6373,11 @@ declare namespace Stripe {
              * The identifier of the customer to subscribe.
              */
             customer: string;
+            
+            /**
+             * Boolean indicating whether this subscription should cancel at the end of the current period.
+             */
+            cancel_at_period_end?: boolean;
         }
 
         interface ISubscriptionUpdateOptions extends IDataOptionsWithMetadata {
